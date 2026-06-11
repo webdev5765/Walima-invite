@@ -26,7 +26,7 @@
     color:var(--ink);
     overflow-x:hidden;
     min-height:100vh;
-    display:flex;align-items:center;justify-content:center;
+    display:flex;align-items:flex-start;justify-content:center;
   }
 
   /* ---------- drifting petals canvas ---------- */
@@ -108,7 +108,7 @@
   @keyframes fadepulse{0%,100%{opacity:.45}50%{opacity:1}}
 
   /* ---------- card ---------- */
-  .stage{perspective:1400px;z-index:2;padding:56px 18px;width:100%;display:flex;justify-content:center}
+  .stage{perspective:1400px;z-index:2;padding:56px 18px;width:100%;display:flex;justify-content:center;margin:auto 0}
   .card{
     width:min(540px,94vw);
     background:var(--paper);
@@ -241,7 +241,9 @@
   }
   .modal-close:hover{color:var(--navy)}
   .modal-title{
-    font-family:'Monsieur La Doulaise',cursive;font-size:44px;color:var(--navy);margin-bottom:6px;
+    font-family:'Cormorant Garamond',serif;font-weight:500;
+    font-size:22px;letter-spacing:.5em;text-transform:uppercase;
+    color:var(--navy);margin-bottom:10px;padding-left:.5em;
   }
   .modal-sub{
     font-family:'Cormorant Garamond',serif;font-size:15px;color:#5a6c77;
@@ -304,7 +306,6 @@
 <!-- intro cover -->
 <div id="seal" role="button" aria-label="Open invitation" tabindex="0" style="gap:34px">
   <div class="cover">
-    <div class="cover-eyebrow">The Walima of</div>
     <svg class="sprig" viewBox="0 0 74 34" aria-hidden="true">
       <path d="M4 28 Q24 20 37 17 Q50 14 70 8"/>
       <path d="M14 24 Q15 18 20 15"/>
@@ -315,9 +316,9 @@
       <path d="M30 23 Q34 24 36 27"/>
       <path d="M43 19 Q47 20 49 23"/>
     </svg>
-    <div class="cover-name">Nabiya</div>
-    <span class="cover-amp">and</span>
     <div class="cover-name">Zaid</div>
+    <span class="cover-amp">and</span>
+    <div class="cover-name">Nabiya</div>
     <div class="cover-rule"></div>
     <div class="cover-date">06 · 09 · 2026</div>
     <div class="cover-wash" aria-hidden="true"></div>
@@ -339,9 +340,9 @@
       <div class="eyebrow reveal">please join us for</div>
       <div class="invite-script reveal d1">the walima of</div>
 
-      <div class="name reveal d2">Nabiya Imran</div>
+      <div class="name reveal d2">Zaid Bin Saad</div>
       <span class="amp reveal d3">and</span>
-      <div class="name reveal d3">Zaid Bin Saad</div>
+      <div class="name reveal d3">Nabiya Imran</div>
 
       <div class="joy reveal d4">with hearts full of gratitude and joy</div>
 
